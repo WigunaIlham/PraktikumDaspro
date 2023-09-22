@@ -14,5 +14,11 @@ public class Main {
         System.out.println("Nilai UTS : " + nilaiUts);
         System.out.println("Nilai UAS : " + nilaiUas);
         System.out.println("Nilai Akhir : " + nilaiAkhir);
+        System.out.println("================================");
+        if(nilaiAkhir > 90) {
+            System.out.println(nama + "Lulus");
+        }else {
+            System.out.println(nama + "Gagal");
+        }
     }
 }
