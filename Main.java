@@ -7,6 +7,7 @@ public class Main {
         double nilaiUas = 95.2;
         double nilaiAkhir = nilaiTugas * 30/100 + nilaiUts * 30/100 + nilaiUas * 40/100;
 
+        System.out.println("===== Data Nilai Mahasiswa =====")
         System.out.println("Nama : " + nama);
         System.out.println("NIM : " + nim);
         System.out.println("Nilai Tugas : " + nilaiTugas);
