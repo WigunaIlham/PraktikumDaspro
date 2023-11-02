@@ -1,25 +1,23 @@
 import java.util.Scanner;
 
-public class inputarray {
+public class inputarray{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukkan jumlah elemen array: ");
-        int jumlahElemen = input.nextInt();
+        System.out.print("Masukan Jumlah mahasiswa: ");
+        int jumlahMahasiswa = input.nextInt();
 
-        int[] arr = new int[jumlahElemen];
+        int[] umurMahasiswa = new int[jumlahMahasiswa];
 
-        System.out.println("Masukkan elemen-elemen array:");
-
-        for (int i = 0; i < jumlahElemen; i++) {
-            System.out.print("Elemen ke-" + (i + 1) + ": ");
-            arr[i] = input.nextInt();
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.print("Umur Mahasiswa ke-" + (i + 1) + " : ");
+            umurMahasiswa[i] = input.nextInt();
         }
 
-        System.out.println("");
-        System.out.println("Elemen-elemen array yang dimasukkan:");
-        for (int i = 0; i < jumlahElemen; i++) {
-            System.out.println("Elemen ke-" + (i + 1) + ": " + arr[i]);
+        System.out.println("\nData Umur Mahasiswa");
+
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.println("Umur Mahasiswa ke-" + (i + 1) + " : " + umurMahasiswa[i]);
         }
 
         input.close();
